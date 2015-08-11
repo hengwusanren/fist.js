@@ -1,0 +1,122 @@
+/**
+ * Created by hengwu on 2015/8/8.
+ */
+
+var listdata = {
+    filelist: [
+        {
+            id: 0,
+            type: 'txt',
+            url: '/fiew.js/resources/test.txt',
+            name: 'test.txt'
+        },
+        {
+            id: 1,
+            type: 'img',
+            url: '/fiew.js/resources/test.jpg',
+            name: 'test.jpg'
+        },
+        {
+            id: 2,
+            type: 'pdf',
+            url: '/fiew.js/resources/test.pdf',
+            name: 'test.pdf'
+        },
+        {
+            id: 3,
+            type: 'mp3',
+            url: '/fiew.js/resources/test.mp3',
+            name: 'test.mp3'
+        },
+        {
+            id: 4,
+            type: 'mp4',
+            url: '/fiew.js/resources/test.mp4',
+            name: 'test.mp4'
+        },
+        {
+            id: 5,
+            type: 'flv',
+            url: '/fiew.js/resources/test.flv',
+            name: 'test.flv'
+        },
+        {
+            id: 6,
+            type: 'zip',
+            url: '/fiew.js/resources/test.zip',
+            name: 'test.zip'
+        },
+        {
+            id: 7,
+            type: 'avi',
+            url: '/fiew.js/resources/test.avi',
+            name: 'test.avi'
+        },
+        {
+            id: 8,
+            type: 'js',
+            url: '/fiew.js/resources/test.js',
+            name: 'test.js'
+        },
+        {
+            id: 9,
+            type: 'docx',
+            url: '/fiew.js/resources/test.docx',
+            name: 'test.docx'
+        },
+        {
+            id: 10,
+            type: 'xlsx',
+            url: '/fiew.js/resources/test.xlsx',
+            name: 'test.xlsx'
+        },
+        {
+            id: 11,
+            type: 'pptx',
+            url: '/fiew.js/resources/test.pptx',
+            name: 'test.pptx'
+        },
+        {
+            id: 12,
+            type: 'wav',
+            url: '/fiew.js/resources/test.wav',
+            name: 'test.wav'
+        },
+        {
+            id: 13,
+            type: 'svg',
+            url: '/fiew.js/resources/test.svg',
+            name: 'test.svg'
+        },
+        {
+            id: 14,
+            type: 'html',
+            url: '/fiew.js/resources/test.html',
+            name: 'test.html'
+        },
+        {
+            id: 15,
+            type: 'md',
+            url: '/fiew.js/resources/test.md',
+            name: 'test.md'
+        },
+        {
+            id: 16,
+            type: 'doc',
+            url: '/fiew.js/resources/test.doc',
+            name: 'test.doc'
+        },
+        {
+            id: 17,
+            type: 'xls',
+            url: '/fiew.js/resources/test.xls',
+            name: 'test.xls'
+        },
+        {
+            id: 18,
+            type: 'ppt',
+            url: '/fiew.js/resources/test.ppt',
+            name: 'test.ppt'
+        }
+    ]
+};
