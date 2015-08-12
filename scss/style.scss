@@ -19,6 +19,10 @@ button, input, select, textarea { font-size:100%; }
 $padding_a: 4px;
 $padding_b: 8px;
 $padding_c: 16px;
+$color_font_1: #333;
+$color_font_2: #666;
+$color_style_1: #094ab1;
+$color_style_2: #255FB9;
 $color_a: #000;
 $color_b: #111;
 $color_c: #444;
@@ -28,8 +32,6 @@ $color_x: #bbb;
 $color_y: #eee;
 $color_yz: #f8f8f8;
 $color_z: #fff;
-$color_basic: #094ab1;
-$color_basic_a: #08f;
 $opacity_a: 0.8;
 $opacity_b: 0.6;
 $opacity_y: 0.4;
@@ -70,7 +72,9 @@ $li_container_h: $li_h + 2 * $li_padding + $li_border_size;
 
 //--> design:
 
-body {}
+body {
+  color: $color_font_1;
+}
 
 header {
   z-index: 10;
@@ -84,7 +88,11 @@ header {
 .banner {
   width: 100%;
   height: $banner_h;
-  background-color: $banner_bgcolor;
+  line-height: $banner_h;
+  color: $color-z;
+  background-color: $color_style_1;
+  font-size: $fontsize_d;
+  text-align: center;
 }
 
 .container {
@@ -135,7 +143,7 @@ header {
     .subtitle {
       display: inline-block;
       margin-right: $padding_a;
-      color: $color_x;
+      color: $color_font_2;
     }
   }
   .container-right {
@@ -145,10 +153,10 @@ header {
     height: $li_container_h;
     white-space: nowrap;
     a, a:link, a:visited, a:hover {
-      color: $color_basic_a;
+      color: $color_style_2;
     }
     a:active {
-      color: $color_basic;
+      color: $color_style_1;
     }
   }
   .container-right-hidden {
@@ -206,10 +214,18 @@ footer {
   }
 }
 
+.bar-item {
+  color: $color_font_2;
+  vertical-align: top;
+}
+
 .bar-top {
   height: $bar_t_h;
   border-bottom: $border_b;
   background-color: $bar_bgcolor;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
   opacity: $opacity_a;
   >a{
     height: $bar_t_h;
@@ -221,11 +237,13 @@ footer {
 .bar-bottom {
   height: $bar_b_h;
   background-color: $bar_bgcolor;
+  text-align: center;
   border-top: $border_t;
   >a{
-    width: $bar_b_h;
+    //width: $bar_b_h;
     height: $bar_b_h;
     line-height: $bar_b_h;
+    margin: 0 $padding_b;
   }
 }
 
@@ -249,5 +267,35 @@ footer {
   left: 0;
   .widget {
     position: absolute;
+  }
+}
+
+.signal-triangle {
+  position: relative;
+  display: inline-block;
+  width: $bar_t_h / 4;
+  height: $bar_t_h;
+}
+
+.signal-triangle-r {
+  .signal-triangle-r-u {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $bar_t_h/4-2px $bar_t_h/4-2px $bar_t_h/4-2px 0;
+    border-color: transparent transparent $color_font_2 transparent;
+  }
+  .signal-triangle-r-d {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $bar_t_h/4-2px $bar_t_h/4-2px $bar_t_h/4-2px 0;
+    border-color: $color_font_2 transparent transparent transparent;
   }
 }
