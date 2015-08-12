@@ -3,6 +3,7 @@
  */
 
 var listdata = {
+    path: '',
     filelist: [
         {
             id: 0,
@@ -60,60 +61,30 @@ var listdata = {
         },
         {
             id: 9,
-            type: 'docx',
-            url: '/fiew.js/resources/test.docx',
-            name: 'test.docx'
-        },
-        {
-            id: 10,
-            type: 'xlsx',
-            url: '/fiew.js/resources/test.xlsx',
-            name: 'test.xlsx'
-        },
-        {
-            id: 11,
-            type: 'pptx',
-            url: '/fiew.js/resources/test.pptx',
-            name: 'test.pptx'
-        },
-        {
-            id: 12,
             type: 'wav',
             url: '/fiew.js/resources/test.wav',
             name: 'test.wav'
         },
         {
-            id: 13,
-            type: 'svg',
-            url: '/fiew.js/resources/test.svg',
-            name: 'test.svg'
-        },
-        {
-            id: 14,
+            id: 10,
             type: 'html',
             url: '/fiew.js/resources/test.html',
             name: 'test.html'
         },
         {
-            id: 15,
-            type: 'md',
-            url: '/fiew.js/resources/test.md',
-            name: 'test.md'
-        },
-        {
-            id: 16,
-            type: 'doc',
+            id: 11,
+            type: 'docx',
             url: '/fiew.js/resources/test.doc',
             name: 'test.doc'
         },
         {
-            id: 17,
+            id: 12,
             type: 'xls',
             url: '/fiew.js/resources/test.xls',
             name: 'test.xls'
         },
         {
-            id: 18,
+            id: 13,
             type: 'ppt',
             url: '/fiew.js/resources/test.ppt',
             name: 'test.ppt'
