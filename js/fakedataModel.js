@@ -4,7 +4,7 @@
 
 var listData = {
     path: '',
-    filelist: [
+    fList: [
         {
             id: 0,
             type: '',
@@ -15,7 +15,8 @@ var listData = {
             id: 0,
             type: 'txt',
             url: '/fiew.js/resources/test.txt',
-            name: 'test.txt'
+            name: 'test.txt',
+            size: 12312
         },
         {
             id: 1,

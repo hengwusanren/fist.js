@@ -21,6 +21,7 @@
 	<!-- self-defined js -->
 	<script src="js/fakedata.js"></script>
 	<script src="js/fakedataModel.js"></script>
+	<script src="js/util.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
@@ -44,7 +45,7 @@
 	<ul id="mainList" class="list"></ul>
 </div>
 <script id="mainListTpl" type="text/html">
-	{{each filelist as v i}}
+	{{each fList as v i}}
 	{{include 'mainListItemTpl' v}}
 	{{/each}}
 </script>
@@ -73,15 +74,6 @@
 		<a class="bar-item">Hello World</a>
 	</div>
 </footer>
-
-<div id="mask" class="overlay"></div>
-
-<div id="widgets" class="container-widget">
-	<div id="widget1" class="widget" style="position: fixed; top: 0; right: 0;">
-		<img src="resources/test.jpeg" width="80" height="80">
-	</div>
-	<div id="widget2" class="widget"></div>
-</div>
 
 </body>
 </html>
