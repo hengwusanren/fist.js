@@ -2,19 +2,67 @@
  * Created by v-kshe on 8/5/2015.
  */
     
-// data in this session:
+// Data in this session:
 var SessionCache = {
-    curDir: null
+    folderPath: ['root'],
+    folder: 'root',
+    file: '',
+    fileList: [],
+    folderList: []
 };
 
-// events:
+// Data for settings:
+var Settings = {
+    fakedata: true
+};
+
+// Models:
+var Models = {
+    MainList: function (list, folderOrFile) {},
+    Path: {
+        encode: function (folder) {},
+        decode: function (folderPath, folderId) {}
+    }
+};
+
+// Controllers:
+var Controllers = {
+    Cd: function (path) {
+
+    },
+    GetFolderList: function (path) {
+        if(Settings.fakedata === true) {
+            Controllers.SetFolderList(folderListData);
+            return;
+        }
+        return [];
+    },
+    GetFileList: function (path) {
+        if(Settings.fakedata === true) return fileListData;
+        return [];
+    },
+    ShowFolderList: function () {},
+    ShowFileList: function () {},
+    SetFolderList: function (folders) {
+        SessionCache.folderList = Models.MainList(folders, 0);
+        Controllers.ShowFolderList();
+    },
+    SetFileList: function (files) {
+        SessionCache.fileList = Models.MainList(files, 1);
+        Controllers.ShowFileList();
+    },
+    GoBackBy1: function () {},
+    GoBackBy2: function () {}
+};
+
+// Events:
 $(function () {
     $('#mainList').delegate('li', 'click', function(event) {
         // todo
     });
 });
 
-// page-load:
+// PageLoad:
 window.onload = function () {
     // fastclick:
     if ('addEventListener' in document) {
@@ -24,5 +72,5 @@ window.onload = function () {
     }
 
     // templates:
-    document.getElementById('mainList').innerHTML = template('mainListTpl', listdata);
+    document.getElementById('mainList').innerHTML = template('mainListTpl', listData);
 };

@@ -1,93 +1,75 @@
-/**
- * Created by hengwu on 2015/8/8.
- */
+var fileListData = [{
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFileByServerRelativeUrl('/Shared Documents/打开笔记本.onetoc2')",
+    "FileName": "打开笔记本.onetoc2",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/打开笔记本.onetoc2",
+    "Size": 5522,
+    "CreateTime": "2015-03-13T16:48:13+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}, {
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFileByServerRelativeUrl('/Shared Documents/星期二.docx')",
+    "FileName": "星期二.docx",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/星期二.docx",
+    "Size": 20180,
+    "CreateTime": "2015-07-31T14:51:09+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}, {
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFileByServerRelativeUrl('/Shared Documents/文档关注通知实例.docx')",
+    "FileName": "文档关注通知实例.docx",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/文档关注通知实例.docx",
+    "Size": 19287,
+    "CreateTime": "2015-07-23T15:24:59+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}, {
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFileByServerRelativeUrl('/Shared Documents/TestDocument.docx')",
+    "FileName": "TestDocument.docx",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/TestDocument.docx",
+    "Size": 19145,
+    "CreateTime": "2015-07-03T09:53:01+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}, {
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFileByServerRelativeUrl('/Shared Documents/天气好天气好天气好.docx')",
+    "FileName": "天气好天气好天气好.docx",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/天气好天气好天气好.docx",
+    "Size": 20180,
+    "CreateTime": "2015-07-31T14:49:51+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}, {
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFileByServerRelativeUrl('/Shared Documents/星期一通知.docx')",
+    "FileName": "星期一通知.docx",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/星期一通知.docx",
+    "Size": 20180,
+    "CreateTime": "2015-07-31T14:50:37+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}];
 
-var listdata = {
-    path: '',
-    filelist: [
-        {
-            id: 0,
-            type: 'txt',
-            url: '/fiew.js/resources/test.txt',
-            name: 'test.txt'
-        },
-        {
-            id: 1,
-            type: 'img',
-            url: '/fiew.js/resources/test.jpg',
-            name: 'test.jpg'
-        },
-        {
-            id: 2,
-            type: 'pdf',
-            url: '/fiew.js/resources/test.pdf',
-            name: 'test.pdf'
-        },
-        {
-            id: 3,
-            type: 'mp3',
-            url: '/fiew.js/resources/test.mp3',
-            name: 'test.mp3'
-        },
-        {
-            id: 4,
-            type: 'mp4',
-            url: '/fiew.js/resources/test.mp4',
-            name: 'test.mp4'
-        },
-        {
-            id: 5,
-            type: 'flv',
-            url: '/fiew.js/resources/test.flv',
-            name: 'test.flv'
-        },
-        {
-            id: 6,
-            type: 'zip',
-            url: '/fiew.js/resources/test.zip',
-            name: 'test.zip'
-        },
-        {
-            id: 7,
-            type: 'avi',
-            url: '/fiew.js/resources/test.avi',
-            name: 'test.avi'
-        },
-        {
-            id: 8,
-            type: 'js',
-            url: '/fiew.js/resources/test.js',
-            name: 'test.js'
-        },
-        {
-            id: 9,
-            type: 'wav',
-            url: '/fiew.js/resources/test.wav',
-            name: 'test.wav'
-        },
-        {
-            id: 10,
-            type: 'html',
-            url: '/fiew.js/resources/test.html',
-            name: 'test.html'
-        },
-        {
-            id: 11,
-            type: 'docx',
-            url: '/fiew.js/resources/test.doc',
-            name: 'test.doc'
-        },
-        {
-            id: 12,
-            type: 'xls',
-            url: '/fiew.js/resources/test.xls',
-            name: 'test.xls'
-        },
-        {
-            id: 13,
-            type: 'ppt',
-            url: '/fiew.js/resources/test.ppt',
-            name: 'test.ppt'
-        }
-    ]
-};
+var folderListData = [{
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFolderByServerRelativeUrl('/Shared Documents/Forms')",
+    "FileName": "Forms",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/Forms",
+    "Size": 0,
+    "CreateTime": "2014-10-27T12:02:49+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}, {
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFolderByServerRelativeUrl('/Shared Documents/协同笔记本')",
+    "FileName": "协同笔记本",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/协同笔记本",
+    "Size": 0,
+    "CreateTime": "2015-03-13T16:50:04+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}, {
+    "FileWebApi": "https://cnedu.sharepoint.cn/_api/Web/GetFolderByServerRelativeUrl('/Shared Documents/测试文件夹')",
+    "FileName": "测试文件夹",
+    "ResourceUrl": "",
+    "SharedLink": "/Shared Documents/测试文件夹",
+    "Size": 0,
+    "CreateTime": "2015-07-17T11:25:57+08:00",
+    "UpdateTime": "0001-01-01T00:00:00"
+}];
